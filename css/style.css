@@ -16,18 +16,20 @@
 }
 
 .bullet-active{
-  color: yellow;
+  color: #fb6667;
 }
 
 
 body{
 
   font-family: 'Nanum Gothic', sans-serif;
+  background-color: #f09030;
+
 
 }
 
 header{
-  background-color: #5C142C;
+  background-color: #6018ff;
   border: 6px ridge #D85428;
 ;
   height: 20vh
@@ -36,7 +38,6 @@ header{
 main{
   border: 6px ridge #D85428;
   height: 80vh;
-  background-color: #DB262C;
   background-image: url(../img/pattern.png);
   background-size: contain;
 }
@@ -71,25 +72,29 @@ main{
 
 .bullets > i{
   padding: 0 10px;
-  font-size: 40px;
+  font-size: 50px;
 }
+
+
 
 /* TYPO */
 h1{
-  font-size: 50px;
-  color: #DA2263;
+  font-size: 90px;
+  color: 	#c000ff;
 }
 
 i{
-  color:#D85428;
-  font-size: 60px;
+  color:#fbbb8f;
+  font-size: 70px;
   font-weight: bolder;
   cursor: pointer;
   margin: 0 10px;
+  text-shadow: 4px 1px 8px rgba(280, 0, 48, 0.5);
+
 }
 
 i:hover{
-  color: yellow;
+  color: #fb6667;
 }
 
 a{
