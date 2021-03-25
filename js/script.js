@@ -33,6 +33,10 @@ const App = new Vue (
         }
       },
 
+      bulletScroll: function(i) {
+        this.picIndex = i;
+      },
+
     },
 
 

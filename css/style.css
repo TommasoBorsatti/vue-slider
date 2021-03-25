@@ -91,3 +91,12 @@ i{
 i:hover{
   color: yellow;
 }
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+a:hover{
+  filter: hue-rotate(20deg);
+}
