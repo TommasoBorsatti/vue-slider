@@ -29,7 +29,6 @@ header{
 
 main{
   border: 6px ridge #D85428;
-;
   height: 80vh;
 }
 
@@ -53,9 +52,19 @@ main{
 
 .images > img {
   height: 100%;
+  min-width: 750px;
+  border: 6px ridge #D85428;
+
+
 }
 
+.bullets{
+  padding: 15px 0;
+}
 
+.bullets > i{
+  padding: 0 10px
+}
 
 /* TYPO */
 h1{
