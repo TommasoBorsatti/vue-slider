@@ -15,9 +15,15 @@
   justify-content: center;
 }
 
+.bullet-active{
+  color: yellow;
+}
+
 
 body{
-  background-color: #DB262C;
+
+  font-family: 'Nanum Gothic', sans-serif;
+
 }
 
 header{
@@ -30,6 +36,9 @@ header{
 main{
   border: 6px ridge #D85428;
   height: 80vh;
+  background-color: #DB262C;
+  background-image: url(../img/pattern.png);
+  background-size: contain;
 }
 
 #root{
@@ -53,9 +62,7 @@ main{
 .images > img {
   height: 100%;
   min-width: 750px;
-  border: 6px ridge #D85428;
-
-
+  border: 8px ridge #D85428;
 }
 
 .bullets{
@@ -63,18 +70,24 @@ main{
 }
 
 .bullets > i{
-  padding: 0 10px
+  padding: 0 10px;
+  font-size: 40px;
 }
 
 /* TYPO */
 h1{
-  font-size: 40px;
+  font-size: 50px;
   color: #DA2263;
 }
 
 i{
   color:#D85428;
-  font-size: 40px;
+  font-size: 60px;
+  font-weight: bolder;
   cursor: pointer;
   margin: 0 10px;
+}
+
+i:hover{
+  color: yellow;
 }

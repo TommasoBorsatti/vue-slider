@@ -7,6 +7,8 @@
   <title>Carosello</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
@@ -26,7 +28,7 @@
       <div class="images">
         <img :src="pics[picIndex]" alt="landscape img">
         <div class="bullets flex-container">
-          <i v-for="circle in pics" class="fas fa-circle"></i>
+          <i v-for="(image, index) in pics" :class= "picIndex == index ? 'bullet-active' : '' " class="fas fa-circle"></i>
         </div>
       </div>
       <div class="right panel">
