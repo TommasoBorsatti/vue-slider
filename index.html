@@ -19,12 +19,12 @@
 </header>
 
 <main>
-  <div class="flex-container" id="root">
+  <div v-on:keydown.39="next" class="flex-container" id="root" >
 
     <div class="carousel flex-container">
 
       <div class="left panel">
-        <i @click="prev" class="fas fa-chevron-left"></i>
+        <i v-on:keyup.13="prev" @click="prev" class="fas fa-chevron-left"></i>
       </div>
       <div class="images">
         <img :src="pics[picIndex]" alt="landscape img">
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="right panel">
-        <i @click="next" class="fas fa-chevron-right"></i>
+        <i  @click="next" class="fas fa-chevron-right"></i>
       </div>
 
     </div>

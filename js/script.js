@@ -37,10 +37,6 @@ const App = new Vue (
         this.picIndex = i;
       },
 
-      play: function() {
-        
-      }
-
     },
 
 
